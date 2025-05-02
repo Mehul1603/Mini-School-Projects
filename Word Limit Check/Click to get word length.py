@@ -1,0 +1,8 @@
+f=open('Paste text here.txt','r')
+a=f.read()
+s=a.split()
+f.close()
+f=open('Paste text here.txt','a')
+f.write("\n\nNo. of words are: "+str(len(s)))
+f.close()
+print(len(s))
